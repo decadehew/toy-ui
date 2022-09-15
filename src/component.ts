@@ -1,4 +1,4 @@
-import { install } from './components/button/index'
+import ButtonInstall from '@toy-ui/button/index'
 export const installAll = (app) => {
-  install(app)
+  ButtonInstall(app)
 }

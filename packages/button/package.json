@@ -1,0 +1,9 @@
+{
+  "name": "@toy-ui/button",
+  "version": "0.0.0",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "dependencies": {
+    "vue": "^3.0.0-rc.1"
+  }
+}

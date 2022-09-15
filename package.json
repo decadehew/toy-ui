@@ -1,18 +1,33 @@
 {
   "name": "toy-ui",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "main": "index.js",
+  "description": "Toy-ui Library for Vue3",
+  "repository": "git@github.com:decadehew/toy-ui.git",
   "license": "MIT",
+  "private": true,
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "cz": "npx git-cz",
+    "gc": "sh ./scripts/gc.sh"
   },
+  "workspaces": [
+    "packages/*"
+  ],
   "devDependencies": {
     "@vue/compiler-sfc": "^3.0.0-rc.1",
+    "cz-conventional-changelog": "^3.2.0",
+    "lerna": "^3.22.1",
     "vite": "^1.0.0-rc.1"
   },
   "dependencies": {
     "vue": "^3.0.0-rc.1",
     "vue-router": "^4.0.0-beta.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
