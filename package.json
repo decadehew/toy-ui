@@ -1,0 +1,18 @@
+{
+  "name": "toy-ui",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "@vue/compiler-sfc": "^3.0.0-rc.1",
+    "vite": "^1.0.0-rc.1"
+  },
+  "dependencies": {
+    "vue": "^3.0.0-rc.1",
+    "vue-router": "^4.0.0-beta.2"
+  }
+}
