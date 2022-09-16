@@ -27,6 +27,7 @@ NAME=$NORMALIZED_NAME
 
 mkdir -p "$DIRNAME"
 mkdir -p "$DIRNAME/src"
+mkdir -p "$DIRNAME/doc"
 
 cat <<EOF >"$DIRNAME/index.ts"
 import { App } from 'vue'
@@ -52,8 +53,8 @@ export default {
 </style>
 EOF
 
-cat <<EOF >"$DIRNAME/index.stories.js"
-import El${NAME} from './index'
+cat <<EOF >"$DIRNAME/doc/index.stories.js"
+import El${NAME} from '../index'
 export default {
   title: "${NAME}"
 }
