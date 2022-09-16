@@ -9,6 +9,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "test": "lerna run test --stream",
     "cz": "npx git-cz",
     "gc": "sh ./scripts/gc.sh"
   },
@@ -16,12 +17,14 @@
     "packages/*"
   ],
   "devDependencies": {
+    "@types/jest": "^26.0.7",
     "@vue/compiler-sfc": "^3.0.0-rc.1",
     "cz-conventional-changelog": "^3.2.0",
     "lerna": "^3.22.1",
+    "typescript": "^3.9.7",
     "vite": "^1.0.0-rc.1"
   },
-  "dependencies": {
+  "peerDependencies": {
     "vue": "^3.0.0-rc.1",
     "vue-router": "^4.0.0-beta.2"
   },
