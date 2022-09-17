@@ -1,0 +1,20 @@
+{
+  "name": "element-plus",
+  "version": "0.0.1",
+  "description": "> TODO: description",
+  "author": "",
+  "homepage": "https://github.com/decadehew/toy-ui#readme",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/decadehew/toy-ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/decadehew/toy-ui/issues"
+  },
+  "dependencies": {
+    "@toy-ui/badge": "^0.0.0",
+    "@toy-ui/button": "^0.0.0"
+  }
+}
