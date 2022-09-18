@@ -8,13 +8,13 @@
   "private": true,
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
     "test": "jest",
     "cz": "git add -A && npx git-cz",
     "gen": "bash ./scripts/gc.sh",
     "storybook": "start-storybook",
     "bootstrap": "yarn && npx lerna bootstrap",
-    "lint": "eslint . --ext .vue,.js,.ts"
+    "lint": "eslint ./packages --ext .vue,.js,.ts",
+    "build": "yarn bootstrap && yarn build-storybook"
   },
   "workspaces": [
     "packages/*"
