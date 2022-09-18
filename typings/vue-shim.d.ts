@@ -6,3 +6,7 @@ declare module '*.vue' {
   }
   export default _default
 }
+
+declare type Nullable<T> = T | null
+
+declare type CustomizedHTMLElement<T> = HTMLElement & T
