@@ -7,8 +7,8 @@ describe('Tag.vue', () => {
   test('render text & class', () => {
     const wrapper = mount(Tag, {
       slots: {
-        default: AXIOM
-      }
+        default: AXIOM,
+      },
     })
 
     expect(wrapper.text()).toEqual(AXIOM)
@@ -24,8 +24,8 @@ describe('Tag.vue', () => {
   test('type', () => {
     const wrapper = mount(Tag, {
       props: {
-        type: 'primary'
-      }
+        type: 'primary',
+      },
     })
 
     const vm = wrapper.vm
@@ -35,8 +35,8 @@ describe('Tag.vue', () => {
   test('hit', () => {
     const wrapper = mount(Tag, {
       props: {
-        hit: true
-      }
+        hit: true,
+      },
     })
 
     const vm = wrapper.vm
@@ -62,7 +62,7 @@ describe('Tag.vue', () => {
         closeTransition: true,
       },
     })
-    const vm = wrapper.vm;
+    const vm = wrapper.vm
     expect(vm.$el.classList.contains('md-fade-center')).toEqual(false)
   })
 
@@ -72,7 +72,7 @@ describe('Tag.vue', () => {
         color: 'rgb(0, 0, 0)',
       },
     })
-    const vm = wrapper.vm;
+    const vm = wrapper.vm
     expect(vm.$el.style.backgroundColor).toEqual('rgb(0, 0, 0)')
   })
 
@@ -82,8 +82,8 @@ describe('Tag.vue', () => {
         effect: 'dark',
       },
     })
-    const vm = wrapper.vm;
-    const el = vm.$el;
+    const vm = wrapper.vm
+    const el = vm.$el
     expect(el.className.indexOf('el-tag--dark') > -1).toEqual(true)
     expect(el.className.indexOf('el-tag--light') > -1).toEqual(false)
     expect(el.className.indexOf('el-tag--plain') > -1).toEqual(false)

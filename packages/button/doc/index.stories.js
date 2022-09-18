@@ -5,7 +5,7 @@ export default {
   // component: ElButton
 }
 
-export const NormalButton = () => {
+export const NormalButton = (): string => {
   // return {
   //   template: '<el-button>With Text</el-button>',
   //   installer: ElButton
@@ -14,7 +14,7 @@ export const NormalButton = () => {
   return '<el-button>With Text</el-button>'
 }
 
-export const ButtonTwo = () => {
+export const ButtonTwo = (): string => {
   // return {
   //   template: '<el-button>button two</el-button>',
   //   installer: ElButton

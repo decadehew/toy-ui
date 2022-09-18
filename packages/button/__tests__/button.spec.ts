@@ -6,18 +6,18 @@ const COMMON_CONFIG = {
   global: {
     provide: {
       elForm: {},
-      elFormItem: {}
-    }
-  }
+      elFormItem: {},
+    },
+  },
 }
 
 describe('Button.vue', () => {
   test('render text', () => {
     const instance = mount(Button, {
       slots: {
-        default: AXIOM
+        default: AXIOM,
       },
-      ...COMMON_CONFIG
+      ...COMMON_CONFIG,
     })
     expect(instance.text()).toEqual(AXIOM)
   })
@@ -25,9 +25,9 @@ describe('Button.vue', () => {
   test('handle click', async () => {
     const instance = mount(Button, {
       slots: {
-        default: AXIOM
+        default: AXIOM,
       },
-      ...COMMON_CONFIG
+      ...COMMON_CONFIG,
     })
 
     await instance.trigger('click')

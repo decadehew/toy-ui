@@ -1,5 +1,4 @@
 import { mount } from '@vue/test-utils'
-import * as exp from 'constants'
 import Badge from '../src/index.vue'
 
 const AXIOM = 'I am a boy'
@@ -7,7 +6,7 @@ const AXIOM = 'I am a boy'
 describe('Badge', () => {
   test('has value', () => {
     const wrapper = mount(Badge, {
-      props: { value: 80 }
+      props: { value: 80 },
     })
 
     expect(wrapper.vm.content).toEqual(80)
@@ -15,7 +14,7 @@ describe('Badge', () => {
 
   test('is fixed', () => {
     const wrapper = mount(Badge, {
-      slots: { default: AXIOM }
+      slots: { default: AXIOM },
     })
 
     expect(wrapper.find('.el-badge__content.is-fixed')).toBeDefined()
@@ -24,7 +23,7 @@ describe('Badge', () => {
   test('is dot', () => {
     const wrapper = mount(Badge, {
       props: { isDot: true },
-      slots: { default: AXIOM }
+      slots: { default: AXIOM },
     })
 
     expect(wrapper.find('.el-badge__content.is-fixed')).toBeDefined()
@@ -32,7 +31,7 @@ describe('Badge', () => {
 
   test('max', async () => {
     const wrapper = mount(Badge, {
-      props: { max: 100, value: 200 }
+      props: { max: 100, value: 200 },
     })
 
     expect(wrapper.vm.content).toEqual('100+')

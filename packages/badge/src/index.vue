@@ -1,10 +1,9 @@
 <template>
   <div class="el-badge">
-    <slot />
+    <slot></slot>
     <transition name="el-zoom-in-center">
       <sup
         v-show="!hidden && (content || content === 0 || isDot)"
-        v-text="content"
         class="el-badge__content"
         :class="[
           'el-badge__content--' + type,
@@ -13,6 +12,7 @@
             'is-dot': isDot
           }
         ]"
+        v-text="content"
       ></sup>
     </transition>
   </div>
@@ -24,15 +24,18 @@ export default {
   name: 'ElBadge',
   props: {
     value: [String, Number],
-    max: Number,
+    max: {
+      type: Number,
+      default: 0,
+    },
     isDot: Boolean,
     hidden: Boolean,
     type: {
       type: String,
       validator (val) {
         return ['primary', 'success', 'warning', 'info', 'danger'].indexOf(val) > -1
-      }
-    }
+      },
+    },
   },
   setup (props) {
     const content = computed(() => {
@@ -47,8 +50,8 @@ export default {
     })
 
     return {
-      content
+      content,
     }
-  }
+  },
 }
 </script>

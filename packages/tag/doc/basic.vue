@@ -9,7 +9,8 @@
       v-for="item in items"
       :key="item.label"
       :type="item.type"
-      effect="dark">
+      effect="dark"
+    >
       {{ item.label }}
     </el-tag>
   </div>
@@ -19,7 +20,8 @@
       v-for="item in items"
       :key="item.label"
       :type="item.type"
-      effect="plain">
+      effect="plain"
+    >
       {{ item.label }}
     </el-tag>
   </div>
@@ -32,17 +34,17 @@
 </style>
 
 <script>
-  export default {
-    data() {
-      return {
-        items: [
-          { type: '', label: 'Label 1' },
-          { type: 'success', label: 'Label 2' },
-          { type: 'info', label: 'Label 3' },
-          { type: 'danger', label: 'Label 4' },
-          { type: 'warning', label: 'Label 5' }
-        ]
-      }
+export default {
+  data() {
+    return {
+      items: [
+        { type: '', label: 'Label 1' },
+        { type: 'success', label: 'Label 2' },
+        { type: 'info', label: 'Label 3' },
+        { type: 'danger', label: 'Label 4' },
+        { type: 'warning', label: 'Label 5' },
+      ],
     }
-  }
+  },
+}
 </script>

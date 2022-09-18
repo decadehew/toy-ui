@@ -5,17 +5,17 @@ import Tag from '@toy-ui/tag/src/index.vue'
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/button',
-    component: Button
+    component: Button,
   },
   {
     path: '/tag',
-    component: Tag
-  }
+    component: Tag,
+  },
 ]
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
-  routes
+  routes,
 })
 
 export default router

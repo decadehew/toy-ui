@@ -1,7 +1,6 @@
 <template>
   <button
     class="el-button"
-    @click="handleClick"
     :disabled="buttonDisabled || loading"
     :autofocus="autofocus"
     :type="nativeType"
@@ -16,12 +15,13 @@
         'is-circle': circle
       }
     ]"
+    @click="handleClick"
   >
-   <i class="el-icon-loading" v-if="loading"></i> 
-   <i class="icon" v-if="icon && !loading"></i>
-   <span v-if="$slots.default">
-    <slot />
-   </span>
+    <i v-if="loading" class="el-icon-loading"></i>
+    <i v-if="icon && !loading" class="icon"></i>
+    <span v-if="$slots.default">
+      <slot></slot>
+    </span>
   </button>
 </template>
 <script lang="ts">
@@ -42,29 +42,28 @@ export default {
   props: {
     type: {
       type: String,
-      default: 'default'
+      default: 'default',
     },
-    size: String,
+    size: {
+      type: String,
+      default: '',
+    },
     icon: {
       type: String,
-      default: ''
+      default: '',
     },
     nativeType: {
       type: String,
-      default: 'button'
+      default: 'button',
     },
     loading: Boolean,
     disabled: Boolean,
     plain: Boolean,
     autofocus: Boolean,
     round: Boolean,
-    circle: Boolean
+    circle: Boolean,
   },
-  methods: {
-    handleClick(evt) {
-      this.$emit('click', evt);
-    }
-  },
+  emits: ['click'],
   setup(props, ctx) {
     // inject
     const elForm = inject<ElForm>('elForm')
@@ -88,9 +87,9 @@ export default {
       _elFormItemSize,
       buttonSize,
       buttonDisabled,
-      handleClick
+      handleClick,
     }
-  }
-};
+  },
+}
 </script>
 <style lang=""></style>
