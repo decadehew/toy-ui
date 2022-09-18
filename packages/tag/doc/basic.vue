@@ -26,15 +26,9 @@
     </el-tag>
   </div>
 </template>
-
-<style scoped>
-.el-tag {
-  margin: 6px;
-}
-</style>
-
 <script>
-export default {
+import { defineComponent } from 'vue'
+export default defineComponent({
   data() {
     return {
       items: [
@@ -46,5 +40,10 @@ export default {
       ],
     }
   },
-}
+})
 </script>
+<style scoped>
+.el-tag {
+  margin: 6px;
+}
+</style>

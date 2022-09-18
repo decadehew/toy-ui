@@ -20,10 +20,24 @@
 <script lang="ts">
 import { computed } from 'vue'
 
+interface IBadgeProps {
+  value: string | number;
+  max: number;
+  isDot: boolean;
+  hidden: boolean;
+  type: string;
+}
+interface IBadgeSetups {
+  content: number | string;
+}
+
 export default {
   name: 'ElBadge',
   props: {
-    value: [String, Number],
+    value: {
+      type: [String, Number],
+      default: '',
+    },
     max: {
       type: Number,
       default: 0,
@@ -32,12 +46,13 @@ export default {
     hidden: Boolean,
     type: {
       type: String,
-      validator (val) {
+      default: 'primary',
+      validator (val: string): boolean {
         return ['primary', 'success', 'warning', 'info', 'danger'].indexOf(val) > -1
       },
     },
   },
-  setup (props) {
+  setup (props: IBadgeProps): IBadgeSetups {
     const content = computed(() => {
       if (props.isDot) return
 

@@ -34,6 +34,16 @@ const ELEMENT: {
   size?: number;
 } = {}
 
+interface ITagProps {
+  closable: boolean,
+  type: string,
+  hit: boolean,
+  disableTransition: boolean,
+  color: string,
+  size: string,
+  effect: string
+}
+
 export default defineComponent({
   name: 'ElTag',
   props: {
@@ -60,6 +70,7 @@ export default defineComponent({
       },
     },
   },
+  emits: ['close'],
   setup (props, ctx) {
     const tagSize = computed(() => {
       return props.size || (ELEMENT || {}).size
@@ -76,13 +87,13 @@ export default defineComponent({
       ]
     })
 
-    const handleClose = (event) => {
+    const handleClose = (event): void => {
       event.stopPropagation()
       ctx.emit('close', event)
     }
 
-    const handleClick = (event) => {
-      ctx.emit('click', event)
+    const handleClick = (event): void => {
+      ctx.emit('close', event)
     }
 
     return {

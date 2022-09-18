@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 const importForm = require('import-from')
 
 function getPackages (context) {
