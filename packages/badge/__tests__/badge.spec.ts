@@ -17,7 +17,7 @@ describe('Badge', () => {
       slots: { default: AXIOM },
     })
 
-    expect(wrapper.find('.el-badge__content.is-fixed')).toBeDefined()
+    expect(wrapper.find('.el-badge__content.is-fixed').exists()).toBe(true)
   })
 
   test('is dot', () => {
@@ -26,7 +26,7 @@ describe('Badge', () => {
       slots: { default: AXIOM },
     })
 
-    expect(wrapper.find('.el-badge__content.is-fixed')).toBeDefined()
+    expect(wrapper.find('.el-badge__content.is-fixed').exists()).toBe(true)
   })
 
   test('max', async () => {

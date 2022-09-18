@@ -3,5 +3,6 @@ node_modules
 dist
 *.local
 .tours
+.todo
 yarn-error.log
 storybook-static
