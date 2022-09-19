@@ -17,6 +17,8 @@
     "@toy-ui/badge": "^0.0.0",
     "@toy-ui/button": "^0.0.0",
     "@toy-ui/tag": "^0.0.0",
-    "@toy-ui/card": "^0.0.0"
+    "@toy-ui/divider": "^0.0.0",
+    "@toy-ui/card": "^0.0.0",
+    "@toy-ui/time-line": "^0.0.0"
   }
 }

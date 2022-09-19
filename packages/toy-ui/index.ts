@@ -4,6 +4,7 @@ import ElBadge from '@toy-ui/badge'
 import ElTag from '@toy-ui/tag'
 import ElDivider from '@toy-ui/divider'
 import ElCard from '@toy-ui/card'
+import ElTimeLine from '@toy-ui/time-line'
 
 export {
   ElButton,
@@ -11,6 +12,7 @@ export {
   ElTag,
   ElDivider,
   ElCard,
+  ElTimeLine,
 }
 
 export default function install(app: App): void {
@@ -19,4 +21,5 @@ export default function install(app: App): void {
   ElTag(app)
   ElDivider(app)
   ElCard(app)
+  ElTimeLine(app)
 }
