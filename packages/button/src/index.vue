@@ -1,10 +1,10 @@
 <template>
   <button
-    class="el-button"
     :disabled="buttonDisabled || loading"
     :autofocus="autofocus"
     :type="nativeType"
     :class="[
+      'el-button',
       type ? 'el-button--' + type : '',
       buttonSize ? 'el-button--' + buttonSize : '',
       {
@@ -84,7 +84,7 @@ export default defineComponent({
     circle: Boolean,
   },
   emits: ['click'],
-  setup(props, ctx) {
+  setup(props, ctx): IButtonSetups {
     // inject
     const elForm = inject<ElForm>('elForm')
     const elFormItem = inject<ElFormItem>('elFormItem')

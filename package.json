@@ -37,7 +37,6 @@
     "eslint": "^7.5.0",
     "eslint-plugin-vue": "^7.0.0-beta.o",
     "husky": "^4.2.5",
-    "import-from": "^4.0.0",
     "jest": "^24.1.0",
     "lerna": "^3.22.1",
     "lint-staged": "^10.2.11",
@@ -45,12 +44,10 @@
     "typescript": "^3.9.7",
     "vite": "^1.0.0-rc.1",
     "vue-jest": "5.0.0-alpha.1",
-    "vue-loader": "^v16.0.0-beta.4",
-    "vue-router": "^4.0.0-beta.2"
+    "vue-loader": "^v16.0.0-beta.4"
   },
   "peerDependencies": {
-    "vue": "^3.0.0-rc.1",
-    "vue-router": "^4.0.0-beta.2"
+    "vue": "^3.0.0-rc.1"
   },
   "config": {
     "commitizen": {

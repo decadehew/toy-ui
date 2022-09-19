@@ -3347,11 +3347,6 @@
     "@vue/compiler-dom" "3.2.39"
     "@vue/shared" "3.2.39"
 
-"@vue/devtools-api@^6.1.4":
-  version "6.2.1"
-  resolved "https://registry.yarnpkg.com/@vue/devtools-api/-/devtools-api-6.2.1.tgz#6f2948ff002ec46df01420dfeff91de16c5b4092"
-  integrity sha512-OEgAMeQXvCoJ+1x8WyQuVZzFo0wcyCmUR3baRVLmKBo1LmYZWMlRiXlux5jd0fqVJu6PfDbOrZItVqUEzLobeQ==
-
 "@vue/reactivity-transform@3.2.39":
   version "3.2.39"
   resolved "https://registry.yarnpkg.com/@vue/reactivity-transform/-/reactivity-transform-3.2.39.tgz#da6ae6c8fd77791b9ae21976720d116591e1c4aa"
@@ -8222,11 +8217,6 @@ import-from@^2.1.0:
   integrity sha512-0vdnLL2wSGnhlRmzHJAg5JHjt1l2vYhzJ7tNLGbeVg0fse56tpGaH0uzH+r9Slej+BSXXEHvBKDEnVSLLE9/+w==
   dependencies:
     resolve-from "^3.0.0"
-
-import-from@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/import-from/-/import-from-4.0.0.tgz#2710b8d66817d232e16f4166e319248d3d5492e2"
-  integrity sha512-P9J71vT5nLlDeV8FHs5nNxaLbrpfAV5cF5srvbZfpwpcJoM/xZR3hiv+q+SAnuSmuGbXMWud063iIMx/V/EWZQ==
 
 import-local@^2.0.0:
   version "2.0.0"
@@ -14468,13 +14458,6 @@ vue-loader@^v16.0.0-beta.4:
     chalk "^4.1.0"
     hash-sum "^2.0.0"
     loader-utils "^2.0.0"
-
-vue-router@^4.0.0-beta.2:
-  version "4.1.5"
-  resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-4.1.5.tgz#256f597e3f5a281a23352a6193aa6e342c8d9f9a"
-  integrity sha512-IsvoF5D2GQ/EGTs/Th4NQms9gd2NSqV+yylxIyp/OYp8xOwxmU8Kj/74E9DTSYAyH5LX7idVUngN3JSj1X4xcQ==
-  dependencies:
-    "@vue/devtools-api" "^6.1.4"
 
 vue@^3.0.3:
   version "3.2.39"

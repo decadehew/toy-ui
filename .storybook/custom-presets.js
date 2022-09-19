@@ -1,4 +1,4 @@
-var VueLoaderPlugin = require('vue-loader/dist/plugin');
+var VueLoaderPlugin = require('vue-loader/dist/plugin')
 
 function webpack(config) {
   return {

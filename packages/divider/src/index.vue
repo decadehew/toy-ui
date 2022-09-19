@@ -1,7 +1,7 @@
 <template>
   <div
     v-bind="$attrs"
-    :class="['el-divider', `el-devider--${direction}`]"
+    :class="['el-divider', `el-divider--${direction}`]"
   >
     <div
       v-if="$slots.default && direction !== 'vertical'"

@@ -23,20 +23,20 @@ export default defineComponent({
     return reactive({
       activities: [{
         content: 'Step 1: xxxxxx',
-        timestamp: '2018-04-15',
+        timestamp: '2022-09-20',
         placement: 'top',
       }, {
         content: 'Step 2: xxxxxx',
-        timestamp: '2018-04-13',
+        timestamp: '2022-09-21',
         hideTimestamp: true,
       }, {
         content: 'Step 3: xxxxxx',
-        timestamp: '2018-04-11',
+        timestamp: '2022-09-22',
         type: 'large',
         icon: 'el-icon-more',
       },{
         content: 'Step 4: xxxxxx',
-        timestamp: '2018-07-11',
+        timestamp: '2022-09-23',
         type: 'primary',
       }],
     })

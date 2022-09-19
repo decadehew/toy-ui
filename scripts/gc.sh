@@ -60,7 +60,7 @@ EOF
 
 cat > $DIRNAME/package.json <<EOF
 {
-  "name": "@element-plus/$INPUT_NAME",
+  "name": "@toy-ui/$INPUT_NAME",
   "version": "0.0.0",
   "main": "dist/index.js",
   "license": "MIT",
@@ -76,7 +76,9 @@ EOF
 cat > $DIRNAME/__tests__/$INPUT_NAME.spec.ts <<EOF
 import { mount } from '@vue/test-utils'
 import $NAME from '../src/index.vue'
-const AXIOM = 'Rem is the best girl'
+
+const AXIOM = 'I am a boy'
+
 describe('$NAME.vue', () => {
   test('render test', () => {
     const wrapper = mount($NAME, {
@@ -91,6 +93,7 @@ EOF
 
 cat <<EOF >"$DIRNAME/doc/index.stories.ts"
 import El${NAME} from '../index'
+
 export default {
   title: '${NAME}',
 }

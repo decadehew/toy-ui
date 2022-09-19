@@ -1,9 +1,9 @@
 <template>
-  <el-tag closable>默认标签</el-tag>
   <el-tag closable>Default Label</el-tag>
   <el-tag size="medium" closable>Medium Label</el-tag>
   <el-tag size="small" closable>Small Label</el-tag>
-  <el-tag size="mini" closable>Mini Label</el-tag>  <div class="tag-group">
+  <el-tag size="mini" closable>Mini Label</el-tag>
+  <div class="tag-group">
     <span class="tag-group__title">Dark</span>
     <el-tag
       v-for="item in items"
@@ -28,6 +28,7 @@
 </template>
 <script>
 import { defineComponent } from 'vue'
+
 export default defineComponent({
   data() {
     return {
