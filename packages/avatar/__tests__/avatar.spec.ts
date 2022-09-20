@@ -3,8 +3,6 @@ import { nextTick } from 'vue'
 import Avatar from '../src/index.vue'
 import { IMAGE_SUCCESS, IMAGE_FAIL } from '../../__tests__/mock'
 
-const AXIOM = 'I am a boy'
-
 beforeAll(() => {
   Object.defineProperty(global.Image.prototype, 'src', {
     set(src) {
