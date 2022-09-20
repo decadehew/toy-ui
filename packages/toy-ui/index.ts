@@ -6,6 +6,7 @@ import ElDivider from '@toy-ui/divider'
 import ElCard from '@toy-ui/card'
 import ElTimeLine from '@toy-ui/time-line'
 import ElLayout from '@toy-ui/layout'
+import ElProgress from '@toy-ui/progress'
 
 export {
   ElButton,
@@ -15,6 +16,7 @@ export {
   ElCard,
   ElTimeLine,
   ElLayout,
+  ElProgress,
 }
 
 export default function install(app: App): void {
@@ -25,4 +27,5 @@ export default function install(app: App): void {
   ElCard(app)
   ElTimeLine(app)
   ElLayout(app)
+  ElProgress(app)
 }

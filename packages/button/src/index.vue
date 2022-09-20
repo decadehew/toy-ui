@@ -18,7 +18,7 @@
     @click="handleClick"
   >
     <i v-if="loading" class="el-icon-loading"></i>
-    <i v-if="icon && !loading" class="icon"></i>
+    <i v-if="icon && !loading" :class="icon"></i>
     <span v-if="$slots.default">
       <slot></slot>
     </span>
