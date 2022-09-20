@@ -50,11 +50,13 @@ interface IButtonProps {
   circle: boolean;
 }
 
+type EmitFn = (e: Event) => void
+
 interface IButtonSetups {
-  _elFormItemSize: string;
+  _elFormItemSize: number;
   buttonSize: string;
   buttonDisabled: boolean;
-  // handleClick: EmitFn;
+  handleClick: EmitFn;
 }
 
 export default defineComponent({
