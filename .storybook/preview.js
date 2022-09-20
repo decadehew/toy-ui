@@ -2,6 +2,7 @@ import { addDecorator } from '@storybook/html'
 import { createApp } from 'vue'
 import '../src/style/element-ui@2.13.2.css'
 import install from '../packages/toy-ui'
+import './demo.css'
 
 /**
  * Wraps a story into a Vue Element
