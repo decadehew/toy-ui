@@ -7,6 +7,7 @@ import ElCard from '@toy-ui/card'
 import ElTimeLine from '@toy-ui/time-line'
 import ElLayout from '@toy-ui/layout'
 import ElProgress from '@toy-ui/progress'
+import ElAvatar from '@toy-ui/avatar'
 
 export {
   ElButton,
@@ -17,6 +18,7 @@ export {
   ElTimeLine,
   ElLayout,
   ElProgress,
+  ElAvatar,
 }
 
 export default function install(app: App): void {
@@ -28,4 +30,5 @@ export default function install(app: App): void {
   ElTimeLine(app)
   ElLayout(app)
   ElProgress(app)
+  ElAvatar(app)
 }
