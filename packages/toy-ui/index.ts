@@ -5,6 +5,7 @@ import ElTag from '@toy-ui/tag'
 import ElDivider from '@toy-ui/divider'
 import ElCard from '@toy-ui/card'
 import ElTimeLine from '@toy-ui/time-line'
+import ElLayout from '@toy-ui/layout'
 
 export {
   ElButton,
@@ -13,6 +14,7 @@ export {
   ElDivider,
   ElCard,
   ElTimeLine,
+  ElLayout,
 }
 
 export default function install(app: App): void {
@@ -22,4 +24,5 @@ export default function install(app: App): void {
   ElDivider(app)
   ElCard(app)
   ElTimeLine(app)
+  ElLayout(app)
 }
