@@ -9,6 +9,7 @@ import ElLayout from '@toy-ui/layout'
 import ElProgress from '@toy-ui/progress'
 import ElAvatar from '@toy-ui/avatar'
 import ElBreadcrumb from '@toy-ui/breadcrumb'
+import ElIcon from '@toy-ui/icon'
 
 export {
   ElButton,
@@ -21,6 +22,7 @@ export {
   ElProgress,
   ElAvatar,
   ElBreadcrumb,
+  ElIcon,
 }
 
 export default function install(app: App): void {
@@ -34,4 +36,5 @@ export default function install(app: App): void {
   ElProgress(app)
   ElAvatar(app)
   ElBreadcrumb(app)
+  ElIcon(app)
 }
