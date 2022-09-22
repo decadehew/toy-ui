@@ -63,9 +63,7 @@
     }
   },
   "lint-staged": {
-    "*": [
-      ""
-    ]
+    "*.{js,ts,vue}": "eslint --fix"
   },
   "dependencies": {
     "lodash": "^4.17.15"

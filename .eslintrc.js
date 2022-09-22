@@ -39,6 +39,7 @@ module.exports = {
       singleline: 3,
       multiline: 1,
     }],
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
     'vue/html-closing-bracket-spacing': 'error',
   },
 }
