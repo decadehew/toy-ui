@@ -25,6 +25,7 @@
     "@toy-ui/avatar": "^0.0.0",
     "@toy-ui/breadcrumb": "^0.0.0",
     "@toy-ui/icon": "^0.0.0",
-    "@toy-ui/link": "^0.0.0"
+    "@toy-ui/link": "^0.0.0",
+    "@toy-ui/rate": "^0.0.0"
   }
 }

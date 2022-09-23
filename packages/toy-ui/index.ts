@@ -11,6 +11,7 @@ import ElAvatar from '@toy-ui/avatar'
 import ElBreadcrumb from '@toy-ui/breadcrumb'
 import ElIcon from '@toy-ui/icon'
 import ElLink from '@toy-ui/link'
+import ElRate from '@toy-ui/rate'
 
 export {
   ElButton,
@@ -25,6 +26,7 @@ export {
   ElBreadcrumb,
   ElIcon,
   ElLink,
+  ElRate,
 }
 
 export default function install(app: App): void {
@@ -40,4 +42,5 @@ export default function install(app: App): void {
   ElBreadcrumb(app)
   ElIcon(app)
   ElLink(app)
+  ElRate(app)
 }
