@@ -12,7 +12,7 @@
 import { defineComponent, provide, ref, onMounted } from 'vue'
 
 interface IBreadcrumbProps {
-  separator: string;
+  separator: string
   separatorClass: string
 }
 
