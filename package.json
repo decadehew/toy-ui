@@ -66,6 +66,7 @@
     "*.{js,ts,vue}": "eslint --fix"
   },
   "dependencies": {
-    "lodash": "^4.17.15"
+    "lodash-es": "^4.17.15",
+    "@popperjs/core": "^2.4.4"
   }
 }

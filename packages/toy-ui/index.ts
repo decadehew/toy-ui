@@ -14,6 +14,7 @@ import ElLink from '@toy-ui/link'
 import ElRate from '@toy-ui/rate'
 import ElSwitch from '@toy-ui/switch'
 import ElContainer from '@toy-ui/container'
+import ElNotification from '@toy-ui/notification'
 
 export {
   ElButton,
@@ -31,6 +32,7 @@ export {
   ElRate,
   ElSwitch,
   ElContainer,
+  ElNotification,
 }
 
 export default function install(app: App): void {
@@ -49,4 +51,5 @@ export default function install(app: App): void {
   ElRate(app)
   ElSwitch(app)
   ElContainer(app)
+  ElNotification(app)
 }
