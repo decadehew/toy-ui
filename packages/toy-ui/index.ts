@@ -16,6 +16,7 @@ import ElSwitch from '@toy-ui/switch'
 import ElContainer from '@toy-ui/container'
 import ElNotification from '@toy-ui/notification'
 import ElBacktop from '@toy-ui/backtop'
+import ElPageHeader from '@toy-ui/page-header'
 
 export {
   ElButton,
@@ -35,6 +36,7 @@ export {
   ElContainer,
   ElNotification,
   ElBacktop,
+  ElPageHeader,
 }
 
 export default function install(app: App): void {
@@ -55,4 +57,5 @@ export default function install(app: App): void {
   ElContainer(app)
   ElNotification(app)
   ElBacktop(app)
+  ElPageHeader(app)
 }
