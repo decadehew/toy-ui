@@ -31,6 +31,7 @@
     "@toy-ui/container": "^0.0.0",
     "@toy-ui/notification": "^0.0.0",
     "@toy-ui/backtop": "^0.0.0",
-    "@toy-ui/page-header": "^0.0.0"
+    "@toy-ui/page-header": "^0.0.0",
+    "@toy-ui/radio": "^0.0.0"
   }
 }
