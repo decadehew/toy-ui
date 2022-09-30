@@ -18,6 +18,7 @@ import ElNotification from '@toy-ui/notification'
 import ElBacktop from '@toy-ui/backtop'
 import ElPageHeader from '@toy-ui/page-header'
 import ElRadio from '@toy-ui/radio'
+import ElCollapse from '@toy-ui/collapse'
 
 export {
   ElButton,
@@ -39,6 +40,7 @@ export {
   ElBacktop,
   ElPageHeader,
   ElRadio,
+  ElCollapse,
 }
 
 export default function install(app: App): void {
@@ -61,4 +63,5 @@ export default function install(app: App): void {
   ElBacktop(app)
   ElPageHeader(app)
   ElRadio(app)
+  ElCollapse(app)
 }
