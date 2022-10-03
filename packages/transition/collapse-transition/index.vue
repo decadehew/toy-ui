@@ -5,7 +5,7 @@
 </template>
 <script lang='ts'>
 import { defineComponent } from 'vue'
-import { addClass, removeClass } from '../utils/dom'
+import { addClass, removeClass } from '@toy-ui/utils/dom'
 
 export default defineComponent({
   name: 'ElCollapseTransition',
@@ -15,8 +15,10 @@ export default defineComponent({
         beforeEnter(el) {
           addClass(el, 'collapse-transition')
           if (!el.dataset) el.dataset = {}
+
           el.dataset.oldPaddingTop = el.style.paddingTop
           el.dataset.oldPaddingBottom = el.style.paddingBottom
+
           el.style.height = '0'
           el.style.paddingTop = 0
           el.style.paddingBottom = 0
@@ -45,6 +47,7 @@ export default defineComponent({
           el.dataset.oldPaddingTop = el.style.paddingTop
           el.dataset.oldPaddingBottom = el.style.paddingBottom
           el.dataset.oldOverflow = el.style.overflow
+
           el.style.height = el.scrollHeight + 'px'
           el.style.overflow = 'hidden'
         },

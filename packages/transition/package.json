@@ -1,10 +1,9 @@
 {
-  "name": "@toy-ui/collapse",
+  "name": "@toy-ui/transition",
   "version": "0.0.0",
   "main": "dist/index.js",
   "license": "MIT",
   "dependencies": {
-    "mitt": "^2.1.0",
     "@toy-ui/utils": "^0.0.0"
   },
   "peerDependencies": {
