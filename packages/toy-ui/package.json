@@ -33,6 +33,7 @@
     "@toy-ui/backtop": "^0.0.0",
     "@toy-ui/page-header": "^0.0.0",
     "@toy-ui/radio": "^0.0.0",
-    "@toy-ui/collapse": "^0.0.0"
+    "@toy-ui/collapse": "^0.0.0",
+    "@toy-ui/scrollbar": "^0.0.0"
   }
 }
